@@ -1,0 +1,12 @@
+<div class="container-fluid gradient-background">
+    <section>
+        <a href=""><img class="img-logo" src="assets/icon/pokemon.png" srcset=""><img src="assets/icon/logo.png"
+                width="30" height="30" srcset=""></a>
+        <div class="container text-center relative">
+            <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+                <app-pokemon-card class="poke-card" *ngFor="let pokemon of pokemonTeam"
+                    [pokemon]="pokemon"></app-pokemon-card>
+            </div>
+        </div>
+    </section>
+</div>

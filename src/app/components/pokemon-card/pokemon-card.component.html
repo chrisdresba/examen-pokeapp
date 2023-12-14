@@ -1,0 +1,13 @@
+<div class="card" [ngClass]="pokemon.type">
+    <div class="card-img">
+        <div class="identificador">
+            <p>{{pokemon.id}}</p>
+        </div>
+        <img class="img-pokemon" [src]="pokemon.sprite" appImgDefault="assets/icon/poke-default.png"
+            alt="{{ pokemon.name }} Sprite">
+    </div>
+    <div class="card-body">
+        <h3>{{ pokemon.name | titlecase}}</h3>
+        <img [src]="'assets/icon/' + pokemon.type + '.png'" alt="{{ pokemon.type }}" width="80" height="100">
+    </div>
+</div>

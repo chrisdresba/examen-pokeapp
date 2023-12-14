@@ -1,0 +1,76 @@
+$back-electric: #f4e455;
+$back-fire: #e9932a;
+$back-rock: #939393;
+$back-water: #4c9599;
+
+.electric {
+  background-color: $back-electric;
+}
+.fire {
+  background-color: $back-fire;
+}
+.rock {
+  background-color: $back-rock;
+}
+.water {
+  background-color: $back-water;
+}
+
+.card {
+  border: none;
+  width: 250px;
+  border-radius: 10px;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+}
+
+.card-img {
+  width: 100%;
+  height: 120px;
+}
+
+.identificador {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  display: flex;
+  margin: 15px;
+  background-color: #fdfdfd;
+  border-radius: 20px;
+  border: 1px solid #a9a9a91f;
+
+  p {
+    font-size: 18px;
+    margin: auto;
+  }
+}
+
+.img-pokemon {
+  position: absolute;
+  width: 70%;
+  height: 150px;
+  display: flex;
+  margin-left: 15%;
+  margin-top: 30px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fdfdfd;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid rgba(169, 169, 169, 0.25);
+  padding-top: 4em;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2em;
+  font-style: italic;
+}
