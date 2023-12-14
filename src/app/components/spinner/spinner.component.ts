@@ -9,11 +9,4 @@ import { SpinnerService } from 'src/app/shared/services/spinner.service';
 export class SpinnerComponent {
   public service = inject(SpinnerService);
   public isLoading = this.service.isLoading;
-
-  /*
-  constructor(private readonly service: SpinnerService) {
-    this.isLoading = this.service.isLoading;
-  }
-
-  */
 }

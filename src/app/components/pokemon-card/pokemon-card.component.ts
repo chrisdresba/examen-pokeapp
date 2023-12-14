@@ -1,3 +1,4 @@
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, Input, inject, ElementRef } from '@angular/core';
 import { Pokemon } from 'src/app/shared/models/pokemon';
 
@@ -5,6 +6,8 @@ import { Pokemon } from 'src/app/shared/models/pokemon';
   selector: 'app-pokemon-card',
   templateUrl: './pokemon-card.component.html',
   styleUrls: ['./pokemon-card.component.scss'],
+  standalone: true,
+  imports: [CommonModule],
 })
 export class PokemonCardComponent {
   @Input() pokemon: Pokemon = {} as Pokemon;

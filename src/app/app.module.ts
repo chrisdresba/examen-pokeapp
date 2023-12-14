@@ -14,14 +14,18 @@ import { DefaultImageDirective } from './shared/directive/default-image.directiv
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonCardComponent,
     SpinnerComponent,
     NavbarComponent,
     FooterComponent,
     HomeComponent,
     DefaultImageDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    PokemonCardComponent,
+  ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
   ],
