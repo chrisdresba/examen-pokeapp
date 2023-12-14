@@ -1,27 +1,54 @@
-# ExamenPokeapp
+#  POKEAPP - ANGULAR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+Proyecto desarrollado con ANGULAR 16.
 
-## Development server
+Puede acceder al proyecto desde el siguiente [link](https://angular-pokeapp-challenge.web.app/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**PASOS PARA CLONAR REPOSITORIO**
+- git clone https://github.com/chrisdresba/examen-pokeapp.git
+- cd examen-pokeapp
+- npm i
+- ng serve -o
 
-## Code scaffolding
+**Enunciado:**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Se desea armar un equipo de 4 pokemons con distintos tipos. Uno tipo fuego, uno tipo agua, uno tipo electrico y uno tipo roca.
+Crear un componente pokemon-card que contenga el nombre y el sprite del pokemon. Utilizar el service pokeapiservice que consume la api https://pokeapi.co/
+Generar equipos aleatorios al refrescar la pagina.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Funcionamiento
 
-## Running unit tests
+**Home - Pantalla de Inicio**  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*Al ingresar a la página nos encontraremos con un spinner que sera visible mientras se realiza la carga de los datos de los pokemones.*    
 
-## Running end-to-end tests
+*Al realizar la carga, podremos ver un grupo de 4 pokemones, de diferentes tipos*
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![](https://github.com/chrisdresba/examen-pokeapp/blob/main/images/spinner.png?raw=true)
 
-## Further help
+![](https://github.com/chrisdresba/examen-pokeapp/blob/main/images/home.png?raw=true)
+
+*Cada vez que realizamos una recarga de la página, el grupo se vuelve a cargar de manera random*
+
+*La aplicación es responsive*
+
+![](https://github.com/chrisdresba/examen-pokeapp/blob/main/images/home-tablet.png?raw=true)
+
+![](https://github.com/chrisdresba/examen-pokeapp/blob/main/images/home-mobile.png?raw=true)
+
+
+**DESARROLLO APLICADO**
+- Interface -> Utilizado con las solicitudes Http, activando y desactivando el Spinner.
+- Services -> Se utiliza un servicio para el Spinner y un servicio para todas las peticiones a la API.
+- Directive -> Se crea directiva para detectar problema de carga en imagen, y aplicar imagen por Default.
+    
+
+
+
+
+
+
+
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
