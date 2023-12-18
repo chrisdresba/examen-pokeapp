@@ -4,6 +4,10 @@ Proyecto desarrollado con ANGULAR 16.
 
 Puede acceder al proyecto desde el siguiente [link](https://angular-pokeapp-challenge.web.app/).
 
+Puede acceder al proyecto como aplicación desarrollada con Ionic desde el siguiente [link](https://github.com/chrisdresba/Pokeapp-Ionic.git).
+
+Puede acceder al APK Installer desde [aquí](https://github.com/chrisdresba/Pokeapp-Ionic/tree/main/APK%20-%20Installer).
+
 **PASOS PARA CLONAR REPOSITORIO**
 - git clone https://github.com/chrisdresba/examen-pokeapp.git
 - cd examen-pokeapp
